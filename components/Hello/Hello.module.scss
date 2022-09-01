@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+
+.hello {
+    width: 80%;
+    position: relative;
+    display: flex;
+    margin: 4em auto;
+    align-items: center;
+    flex-direction: row;
+    color: $white;
+    background: none;
+    justify-content: space-between;
+    height: 500px;
+    h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        margin: 0;
+        line-height: 45px;
+        span {
+            font-weight: 300;
+        }
+    }
+    p {
+        font-size: 2rem;
+        color: rgb(223, 227, 227);
+    }
+    &_inner {
+        width: 50%;
+        img {
+            width: 100%;
+            z-index: 0;
+        }
+    }
+    &_inner_1 {
+        width: 45%;
+    }
+}
+
+.social_media_div {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin: 0;
+    }
+    &_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 900px) {
+    .hello {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: unset;
+        &_inner {
+            width: 90%;
+        }
+        &_inner_1 {
+            width: 90%;
+        }
+    }
+}

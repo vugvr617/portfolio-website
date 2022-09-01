@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+
+.logo {
+    font-size: 1.5rem;
+    span {
+        font-weight: 400;
+    }
+}
+
+.nav_main {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2em;
+    font-family: $Poppins;
+    color: $white;
+    align-items: center;
+    z-index: 98;
+    justify-content: space-between;
+    background: none;
+}
+
+.main {
+    background-color: $main-bg;
+    width: 100%;
+    background-image: linear-gradient(180deg, #181819, rgba(24, 24, 25, 0) 10%), url("https://uploads-ssl.webflow.com/60b76117e1cc0201199b7824/60bea37ba1d9fa4eb3775625_Grain.png");
+    background-position: 0px 0px, 50% 50%, 50% 100%;
+    background-size: auto, 400px, 125%;
+    background-repeat: repeat, repeat, no-repeat;
+}
+
+.icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.menu {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: $main-bg;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 20px;
+        a {
+            cursor: pointer;
+        }
+    }
+}
+
+.nav {
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    z-index: 90;
+}
+
+@media (max-width: 600px) {
+    .main {
+        position: relative;
+        padding: 0 1em;
+        width: 100%;
+        align-items: center;
+    }   
+    .logo {
+        font-size: 1.3rem;
+    }
+    .nav_main {
+        width: 100%;
+    }
+}
