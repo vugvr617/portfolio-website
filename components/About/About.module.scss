@@ -1,0 +1,128 @@
+@import "../../styles/variables.scss";
+
+.about {
+  margin-top: 10em;
+  min-height: 500px;
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: $main-bg;
+  color: $white;
+  font-family: $Karla;
+  padding-top: 4em;
+  padding-bottom: 15em;
+
+  h1 {
+    font-weight: 400;
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  &_inner {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_inner_1 {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 370px;
+    background-color: #1e1355;
+    margin: 1em auto;
+    border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      width: 90%;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 3.5rem;
+        text-align: left;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.code_icon {
+  position: relative;
+}
+
+.icon_div {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  p {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.skills_main {
+  margin-top: 7em;
+  h1 {
+    margin-bottom: 1em;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2em; 
+  }
+}
+
+.skills_grid {
+  overflow: auto;
+  width: 85%;
+  display: grid;
+  margin: auto;
+  row-gap: 50px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.skills_grid::-webkit-scrollbar {
+  height: 12px;
+}
+
+.skills_grid::-webkit-scrollbar-track {
+  border-radius: px;
+  background:#1e1355; 
+  border-radius: 10px;
+}
+
+.skills_grid::-webkit-scrollbar-thumb {
+  border: 3px solid;
+  border-color: #1e1355;
+  background: $main-bg;
+  border-radius: 10px;
+}
+
+.skills_div {
+  width: 170px;
+  img {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .about_inner {
+    flex-direction: column;
+  }
+  .about_inner_1 {
+    width: 80%;
+  }
+}
